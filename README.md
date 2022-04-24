@@ -41,28 +41,48 @@
   
   Present :   
 <p align="center">
-  <img width="800" src=https://github.com/sharifbhuiyan/School_District_Analysis/blob/main/Resources/2.%20Dct_summary_without%209th%20grade.png
+  <img width="800" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
 </p>
   
   Previous : 
 <p align="center">
-  <img width="800" src=https://github.com/sharifbhuiyan/School_District_Analysis/blob/main/Resources/1.%20Dct_summary_with%209th%20grade.png
+  <img width="800" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20weekly%20fare.png
+</p>
+  
+ # 8. Create a new DataFrame using the "resample()" function by week 'W' and get the sum of the fares for each week.
+  ```ruby
+    
+    pyber_fare_resample_df=pyber_fare_range_df.resample("w").sum()
+
+```
+ 
+
+  
+  
+Previous : 
+<p align="center">
+  <img width="800" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png
 </p>
   
 The command to select all the reading scores from the 9th grade at Thomas High School and replaced them with NaN: 
  
-```ruby
+
+  # Use the graph style fivethirtyeight.
+
+  ```ruby
     
-    student_data_df.loc[(student_data_df["school_name"]=="Thomas High School") & (student_data_df["grade"]=="9th"),"reading_score"]=np.nan
+    style.use('fivethirtyeight')
 
 ```
   
 
   The command to replace the overall passing percentage for Thomas High School in the per_school_summary_df: 
  
+  # Save Figure
 ```ruby
     
-    per_school_summary_df.loc["Thomas High School", "% Overall Passing"] = passing_math_reading_percentage_THS
+  
+  plt.savefig("analysis/PyBer_fare_summary.png")
 
 ```
  
