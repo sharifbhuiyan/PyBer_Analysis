@@ -1,30 +1,28 @@
-# PyBer_Analysis
-
-## **<h1 align="center"> School District Analysis**
+## **<h1 align="center"> PyBer_Analysis**
 
 
 
 
-  ## Overview of the school district analysis: 
-<p align="justify">Reviewing the previous analysis, school board has identified something anomaly in source file, students_complete.csv. Authority noticed an evidence of academic dishonesty. Specifically, reading and math grades for Thomas High School ninth graders appear to have been altered. Now new analysis has been furnished by replacing the math and reading scores for Thomas High School with NaNs and keeping the rest of the data intact. <p>
+  ## Overview of the PyBer_Analysis: 
+<p align="justify">The analysis shows how the data differs by city type and how those differences can be used by decision-makers at PyBer. A summary DataFrame of the ride-sharing data has been created by city type. This dataframe shows the weekly fare by city type.  Then, using Pandas and Matplotlib, a multiple-line graph has been created that shows the total weekly fares for each city type. <p>
 
-<p align="justify">This new analysis consists of two technical analysis.<p>
+<p align="justify">This analysis consists of two technical analysis.<p>
 
-  - Replace ninth-grade reading and math scores
-  - Repeat the school district analysis
+  - A ride-sharing summary DataFrame by city type
+  - A multiple-line chart of total fares for each city type
 
  
-  School district analysis PyCitySchools_Challenge.ipynb file link -  [ School district analysis](https://github.com/sharifbhuiyan/School_District_Analysis/blob/main/PyCitySchools_Challenge.ipynb)  
+  PyBer_Analysis PyBer_Challenge.ipynb file link -  [ PyBer Analysis](https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/PyBer_Challenge.ipynb)  
 
   
 - Resources :
-  - Data source : schools_complete.csv, students_complete.csv
-  - Software : Pandas library, Jupyter Notebook
+  - Data source : city_data.csv, ride_data.csv
+  - Software : Pandas library, Matplotlib library. Jupyter Notebook
 
 
   
   
- ## School district analysis Results: 
+ ## PyBer_Analysis Results: 
   
 <p align="justify"> The following metrics are recreated to repeat the school district analysis : 
 
