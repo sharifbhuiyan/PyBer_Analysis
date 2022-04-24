@@ -24,32 +24,33 @@
   
  ## PyBer_Analysis Results: 
   
-<p align="justify"> The following metrics are recreated to repeat the school district analysis : 
+<p align="justify"> Analysis is demonstrated by describing details summary, ride-sharing data among the different city types and multiple-line chart.<p>
 
+- <p align="justify">Ride-sharing data summary shows the total rides, total drivers, total fares, average fare per ride and average fare per driver, the summary is indexed by city type.<p>
 
-  - The district summary
-  - The school summary
-  - The top 5 and bottom 5 performing schools, based on the overall passing rate
-  - The average math score for each grade level from each school
-  - The average reading score for each grade level from each school
-  - The scores by school spending per student, by school size, and by school type
- <p>
   
-<p align="justify">
-  i) The district summary has been changed after replacing the 9th grade students of Thomas High School. At present Overall passing rate is 64.9, whereas Previously was 65.2. It can be visualized by following snapshot. <p>
-  
-  
-  Present :   
 <p align="center">
   <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
 </p>
+
   
-  Previous : 
+  
+  - <p align="justify">DataFrame has been created on date range: 2019-01-01 through 2019-04-28. It shows the weekly basis total fare according to different city type. Before that a pivot table has been created with the ‘date' as the index, the columns ='type', and values='fare'.<p>
+  
+   
 <p align="center">
   <img width="200" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20weekly%20fare.png
 </p>
   
- # 8. Create a new DataFrame using the "resample()" function by week 'W' and get the sum of the fares for each week.
+ 
+Command is used for Pivot table to get the total fares for each type of city by the date. 
+
+```ruby
+  pyber_fare_pivot_df = pd.pivot_table(pyber_fare_df,values='fare',index=['date'], columns=["type"])
+```
+
+  
+  Command is used for create DataFrame using the "resample()" function by week 'W' and get the sum of the fares for each week.
   ```ruby
     
     pyber_fare_resample_df=pyber_fare_range_df.resample("w").sum()
@@ -58,64 +59,34 @@
  
 
   
-  
-Previous : 
+- <p align="justify">A multiple-line chart has been created to visualise the the differences in ride-sharing data among the different city types.<p>
+
 <p align="center">
   <img width="800" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png
 </p>
   
-The command to select all the reading scores from the 9th grade at Thomas High School and replaced them with NaN: 
- 
 
-  # Use the graph style fivethirtyeight.
 
-  ```ruby
+A graph style 'fivethirtyeight' is used for mmultiple-line chart.
+
+```ruby
     
     style.use('fivethirtyeight')
 
 ```
   
 
-  The command to replace the overall passing percentage for Thomas High School in the per_school_summary_df: 
- 
-  # Save Figure
+   
+To save the figure as png in analysis folder, code :
 ```ruby
-    
-  
+      
   plt.savefig("analysis/PyBer_fare_summary.png")
 
 ```
  
   
   
-  <p align="justify"> ii)	The school summary of Thomas High school has been changed after replacing the 9th grade students of Thomas High School. At present, Overall passing rate is 90.63 (approx), whereas Previously was 65.07 (approx). It can be visualized by following snapshot. <p>
-  
-  Present :   
-<p align="center">
-  <img width="800" src=https://github.com/sharifbhuiyan/School_District_Analysis/blob/main/Resources/4.%20School_summary_without%209th%20grade.png
-</p>
-  
-  Previous : 
-<p align="center">
-  <img width="800" src=https://github.com/sharifbhuiyan/School_District_Analysis/blob/main/Resources/3.%20School_summary_with%209th%20grade.png        
-</p>
-   
-  
-  
  
-
-  
-
-  <p align="center">
-  <img width="800" src=https://github.com/sharifbhuiyan/School_District_Analysis/blob/main/Resources/5.%20Top_School_with%209th%20grade.png       
-</p>
-  
-  
-<p align="justify"></p>
-
-
-
-  
 
      
     
