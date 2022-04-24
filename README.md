@@ -92,28 +92,48 @@ To save the figure as png in analysis folder, code :
     
     
     
-## School district analysis Summary:
-<p align="justify">Finally, school district analysis have been updated after replacing the reading and math scores for the ninth grade at Thomas High School with NaNs. </p>
+## Summary:
+<p align="justify">Summary: Based on the results, a great difference is observed on fare by city type. </p>
 
-<p align="justify">Overall changes was visualized on the district summary, the school summary, performance of Thomas High school based on the overall passing rate,  the scores by school spending per student, by school size, and by school type.</p>
+- Overall ride fare of urban is higher than all others city type.  
 
-Summary: Based on the results, a great difference is observed on fare by city type.
+<p align="center">
+   
+|city type  |Total Fare | 
+| :-------- |:---------:|
+| Urban     | $37,066   |
+| Suburban  | $17,883   |
+| Rural     | $3,914    |
 
-Overall ride fare of urban is higher than all others city type.  
-City type
-Urban :                       37,066 
-Suburban17,883
-Rural :3,914
+</p>
+  
 
-The highest ride fare shows in march for each city type.
-Month Total Fare
-Jan $12,770.00
-Feb $14,390.00
-Mar $ 16,934.00
-Apr $ 14,770.00
+- The highest ride fare shows in march for each city type.  
+  <p align="center">
+   
+|Month  |Total Fare  | 
+| :---- |:----------:|
+| Jan   | $12,770.00 |
+| Feb   | $14,390.00 |
+| Mar   | $16,934.00 |
+| Apr   | $14,770.00 |
 
-R high apr 1177, s 4857 u h mar11045
+</p>
 
-Jan 741, 4248, 7781  
+- The highest ride fare month for Rural is April, whereas March is for Urban and Suburban.  
+|City       | Highest fare Month | Fare|
+| :-------- |:----------:|:----------:|
+| Rural     | Apr     |$1,177.00| 
+| Suburaban | Mar     |$4,857.00| 
+| Urban     | Mar     |$11,045.00| 
+
+- The lowest ride fare month for all city type is January. 
+|City       | Highest fare Month | Fare|
+| :-------- |:----------:|:----------:|
+| Rural     | Jan     |$741.00| 
+| Suburaban | Jan     |$4,248.00| 
+| Urban     | Jan     |$7,781.00| 
+
+
 
 
