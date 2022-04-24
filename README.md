@@ -12,7 +12,7 @@
   - A multiple-line chart of total fares for each city type
 
  
-  PyBer_Analysis PyBer_Challenge.ipynb file link -  [ PyBer Analysis](https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/PyBer_Challenge.ipynb)  
+  PyBer Analysis ipynb file link -  [ PyBer Analysis](https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/PyBer_Challenge.ipynb)  
 
   
 - Resources :
@@ -26,7 +26,7 @@
   
 <p align="justify"> Analysis is demonstrated by describing details summary, ride-sharing data among the different city types and multiple-line chart.<p>
 
-- <p align="justify">Ride-sharing data summary shows the total rides, total drivers, total fares, average fare per ride and average fare per driver, the summary is indexed by city type.<p>
+- <p align="justify">Ride-sharing data summary shows the total rides, total drivers, total fares, average fare per ride and average fare per driver, the summary is furnished with the 'city type' as index.<p>
 
   
 <p align="center">
@@ -36,26 +36,27 @@
   
   
   - <p align="justify">DataFrame has been created on date range: 2019-01-01 through 2019-04-28. It shows the weekly basis total fare according to different city type. Before that a pivot table has been created with the ‘date' as the index, the columns ='type', and values='fare'.<p>
-  
-   
-<p align="center">
-  <img width="200" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20weekly%20fare.png
-</p>
-  
- 
-Command is used for Pivot table to get the total fares for each type of city by the date. 
+
+  Command is used for Pivot table to get the total fares for each type of city by the date. 
 
 ```ruby
   pyber_fare_pivot_df = pd.pivot_table(pyber_fare_df,values='fare',index=['date'], columns=["type"])
 ```
-
   
   Command is used for create DataFrame using the "resample()" function by week 'W' and get the sum of the fares for each week.
   ```ruby
     
     pyber_fare_resample_df=pyber_fare_range_df.resample("w").sum()
 
-```
+``` 
+<p align="center">
+  <img width="200" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20weekly%20fare.png
+</p>
+  
+ 
+
+  
+  
  
 
   
@@ -95,7 +96,7 @@ To save the figure as png in analysis folder, code :
 ## Summary:
 <p align="justify">Summary: Based on the results, a great difference is observed on fare by city type. </p>
 
-- Overall ride fare of urban is higher than all others city type.  
+- Overall ride fare of urban city is higher than Suburban and Rural city. 
 
 <p align="center">
    
@@ -108,10 +109,10 @@ To save the figure as png in analysis folder, code :
 </p>
   
 
-- The highest ride fare shows in march for each city type.  
+- The total highest ride fare shows in march.  
   <p align="center">
    
-|Month  |Total Fare  | 
+|Month  |Total Fare of all city type | 
 | :---- |:----------:|
 | Jan   | $12,770.00 |
 | Feb   | $14,390.00 |
@@ -120,7 +121,8 @@ To save the figure as png in analysis folder, code :
 
 </p>
 
-- The highest ride fare month for Rural is April, whereas March is for Urban and Suburban.  
+- The highest ride fare month for Rural city is April, whereas March is for Urban and Suburban city.   
+  
 |City       | Highest fare Month | Fare|
 | :-------- |:----------:|:----------:|
 | Rural     | Apr     |$1,177.00| 
@@ -128,7 +130,8 @@ To save the figure as png in analysis folder, code :
 | Urban     | Mar     |$11,045.00| 
 
 - The lowest ride fare month for all city type is January. 
-|City       | Highest fare Month | Fare|
+  
+|City       | lowest fare Month | Fare|
 | :-------- |:----------:|:----------:|
 | Rural     | Jan     |$741.00| 
 | Suburaban | Jan     |$4,248.00| 
