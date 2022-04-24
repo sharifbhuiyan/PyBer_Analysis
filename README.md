@@ -41,12 +41,12 @@
   
   Present :   
 <p align="center">
-  <img width="800" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
+  <img width="500" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20summary.png
 </p>
   
   Previous : 
 <p align="center">
-  <img width="800" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20weekly%20fare.png
+  <img width="200" src=https://github.com/sharifbhuiyan/PyBer_Analysis/blob/main/analysis/pyber%20weekly%20fare.png
 </p>
   
  # 8. Create a new DataFrame using the "resample()" function by week 'W' and get the sum of the fares for each week.
@@ -105,21 +105,13 @@ The command to select all the reading scores from the 9th grade at Thomas High S
  
 
   
-iii) Among the 15 schools the overall performance of Thomas High School’s position is 2nd, earlier which was 13th.
-  Present performance of Thomas High school relative to the other schools :
-  
-  <p align="center">
-  <img width="800" src=https://github.com/sharifbhuiyan/School_District_Analysis/blob/main/Resources/6.%20Top_School_without%209th%20grade.png       
-</p>
-  
-  Previous performance of Thomas High school relative to the other schools :
 
   <p align="center">
   <img width="800" src=https://github.com/sharifbhuiyan/School_District_Analysis/blob/main/Resources/5.%20Top_School_with%209th%20grade.png       
 </p>
   
   
-<p align="justify"> iv)	Since the ninth-grade scores of Thomas High school was replaced, in dataframe of each grade level Series for average math scores showing NaN. That means, 9th grade of Thomas school has no performance both on reading and math. It also impacted in spending range while creating spending_summary on Scores by school, size_summary on Scores by school size and type_summary on Scores by school type. </p>
+<p align="justify"></p>
 
 
 
