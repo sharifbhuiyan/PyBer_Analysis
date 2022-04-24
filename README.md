@@ -97,5 +97,23 @@ To save the figure as png in analysis folder, code :
 
 <p align="justify">Overall changes was visualized on the district summary, the school summary, performance of Thomas High school based on the overall passing rate,  the scores by school spending per student, by school size, and by school type.</p>
 
+Summary: Based on the results, a great difference is observed on fare by city type.
+
+Overall ride fare of urban is higher than all others city type.  
+City type
+Urban :                       37,066 
+Suburban17,883
+Rural :3,914
+
+The highest ride fare shows in march for each city type.
+Month Total Fare
+Jan $12,770.00
+Feb $14,390.00
+Mar $ 16,934.00
+Apr $ 14,770.00
+
+R high apr 1177, s 4857 u h mar11045
+
+Jan 741, 4248, 7781  
 
 
